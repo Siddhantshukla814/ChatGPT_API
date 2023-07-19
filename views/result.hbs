@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Result</title>
+</head>
+<body>
+    <form action="/prompt" method="post" enctype="multipart/form-data">
+  <label for="fname">Enter details to generate playwright script</label><br>
+  <textarea id="userInput" name="userInput" rows="10" cols="70">{{formInput}}</textarea><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<br><br>
+    <p style="white-space: pre-wrap;">{{response}}</p>
+</body>
+</html>
