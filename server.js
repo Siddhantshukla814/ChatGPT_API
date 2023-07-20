@@ -1,16 +1,12 @@
 const { Configuration, OpenAIApi } = require("openai");
 const express = require("express");
 var bodyParser = require("body-parser");
-const multer = require("multer");
-var upload = multer();
 
 const app = express();
 require("dotenv").config();
 
 app.set("view engine", "hbs");
-app.use(bodyParser.json());
 
-app.use(upload.array());
 app.use(express.static("public"));
 
 app.get("/", function (req, res) {
