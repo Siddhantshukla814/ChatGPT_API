@@ -14,7 +14,7 @@ app.use(upload.array());
 app.use(express.static("public"));
 
 app.get("/", function (req, res) {
-  res.render("index", { chname: "fuck" });
+  res.render("index");
 });
 
 app.post("/prompt", function (req, res) {
