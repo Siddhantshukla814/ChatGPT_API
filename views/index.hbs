@@ -1,15 +1,31 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI plugin</title>
+    <title>AI Plugin</title>
+    <style>
+      .label{ font-size: 17px; } .button { background-color: #006ad4; border-radius: 2px;font-size:
+      13px; height: 30px;outline: transparent; position: relative; font-family: Arial, Helvetica,
+      sans-serif; -webkit-font-smoothing: antialiased; font-size: 12px; font-weight: 400; border:
+      1px solid rgb(0, 120, 212); border-radius: 2px; box-sizing: border-box; cursor: pointer;
+      display: inline-block; padding: 0px 13px; text-decoration: none; text-align: center;
+      min-width: 80px; height: 32px; background-color: rgb(0, 120, 212); color: rgb(255, 255, 255);
+      user-select: none; } .textarea:focus { outline: none !important; border:2px solid #0078D4 }
+    </style>
   </head>
   <body>
-  <form action="/prompt" method="post" enctype="multipart/form-data">
-  <label for="fname">Enter details to generate playwright script</label><br>
-  <textarea id="userInput" name="userInput" value="" rows="10" cols="70"></textarea><br><br>
-  <input type="submit" value="Submit">
-</form> 
+    <form action="/prompt" method="post" enctype="multipart/form-data">
+      <label for="fname" class="label">Enter prompt to generate playwright script</label><br /><br
+      />
+      <textarea
+        id="userInput"
+        name="userInput"
+        value=""
+        rows="10"
+        cols="70"
+        class="textarea"
+      ></textarea><br /><br />
+      <input type="submit" value="Submit" class="button" />
+    </form>
   </body>
 </html>
